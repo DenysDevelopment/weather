@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.weather-city {
+  width: 414px;
+  max-height: 896px;
+
+  padding: 50px 30px 36px;
+
+  background: linear-gradient(192.05deg, #47bfdf 0%, #4a91ff 100%);
+  color: #fff;
+  border-radius: 15px;
+  &__inner {
+  }
+
+  &__city {
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 30%;
+      height: 30%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    width: 353px;
+    height: 335px;
+    left: 31px;
+    top: 361px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 15px 0;
+  }
+
+  &__today {
+  }
+
+  &__deg {
+    font-size: 100px;
+    line-height: 153px;
+
+    span {
+      position: relative;
+      text-shadow: -4px 8px 50px rgba(0, 0, 0, 0.1);
+      &::before {
+        content: "O";
+        position: absolute;
+        top: -70%;
+        right: -20px;
+        font-size: 20px;
+        text-shadow: -4px 8px 50px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &__weather {
+    font-size: 30px;
+  }
+
+  &__wind {
+    margin-bottom: 20px;
+    .weather__label {
+      background: url(../images/icon-wind.svg) no-repeat left / contain;
+    }
+  }
+
+  &__hum {
+    .weather__label {
+      background: url(../images/icon-hum.svg) no-repeat left / contain;
+    }
+  }
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  &__label {
+    padding-left: 25px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+  }
+
+  &__count {
+  }
+}
+
